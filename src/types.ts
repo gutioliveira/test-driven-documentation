@@ -13,8 +13,9 @@ export interface ParsedTest {
       method: string,
       body: string,
       query: { [k: string]: any },
-      url: { [k: string]: any },
+      url: string,
       params: { [k: string]: any },
+      fullUrl: string,
     },
     res: {
       statusCode: number,

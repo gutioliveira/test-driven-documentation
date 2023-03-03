@@ -1,9 +1,5 @@
-import { addTestDescription, afterAll, generateSwaggerDocs } from "./test-setup";
-import { docGenerator } from "./middleware/express-middleware";
+global.tests = [];
 
-module.exports = {
-  addTestDescription,
-  afterAll,
-  generateSwaggerDocs,
-  docGenerator
-}
+export { docMiddleware } from "./middleware/express-middleware";
+export * from "./test-setup";
+export * from "./swagger";
