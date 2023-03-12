@@ -1,6 +1,6 @@
 {
   "name": "test-driven-documentation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generates documentation from test cases",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
