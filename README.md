@@ -68,7 +68,7 @@ The first step is to use our express middleware.
 Note that docMiddleware is a function that returns a middleware. Just pass `true` if you want to generate docs.
 
 ```js
-import { docMiddleware } from 'superdocs';
+import { docMiddleware } from 'test-driven-documentation';
 app.use(docMiddleware(process.env.GENERATE_DOCS === 'true'))
 ```
 
@@ -79,7 +79,7 @@ You must create an empty doc file in your root. eg: `docs.json`
 After that you should import `testSetup`
 
 ```js
-import { testSetup } from 'superdocs';
+import { testSetup } from 'test-driven-documentation';
 ```
 
 and on your jest's functions afterAll and afterEach call:
@@ -99,7 +99,7 @@ afterEach(() => {
 You must have a Global teardown function setup to properly generate your documentation. Currently we're supporting only `swagger` docs with OpenAPI version setup to 3.0.0.
 
 ```js
-import { generateSwaggerDocs300 } from 'superdocs';
+import { generateSwaggerDocs300 } from 'test-driven-documentation';
 
 const teardown = () => {
   if (process.env.GENERATE_DOCS === 'true'){
