@@ -62,6 +62,10 @@ To attache this into your project you must be using express, jest, and some test
 
 Quite simple to setup everthing.
 
+```
+npm i test-driven-documentation
+```
+
 ## Setup express middleware
 
 The first step is to use our express middleware. 
